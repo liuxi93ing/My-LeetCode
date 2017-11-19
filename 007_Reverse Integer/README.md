@@ -4,17 +4,17 @@ Given a 32-bit signed integer, reverse digits of an integer.
 
 ## Example 1:
 
->Input: 123
+>Input: 123 <br>
 >Output: 321
 
 ## Example 2:
 
->Input: -123
+>Input: -123 <br>
 >Output: -321
 
 ## Example 2:
 
->Input: 120
+>Input: 120 <br>
 >Output: 21
 
 ## Note:
