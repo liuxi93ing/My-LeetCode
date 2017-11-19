@@ -18,16 +18,7 @@ indices 是 index 的复数
 vector 实体可理解为容量可变数组
 
 ``` C++
-vector<int> v;
+vector<int> v; 	//创建vector 对象v
+v.size(); 		//返回当前长度
+v.push_back(a); //在末尾添加数据 a
 ```
-创建
-
-``` C++
-v.size(); 
-```
-返回当前长度
-
-```C++
-v.push_back(a);
-```
-在末尾添加数据 a
