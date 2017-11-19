@@ -1,4 +1,4 @@
-bin
-obj
-.cbp
-.depend
+*/bin
+*/obj
+*.cbp
+*.depend
