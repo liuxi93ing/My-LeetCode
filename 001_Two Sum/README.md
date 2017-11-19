@@ -14,3 +14,20 @@ You may assume that each input would have exactly one solution, and you may not 
 # 笔记：
 
 indices 是 index 的复数
+
+vector 实体可理解为容量可变数组
+
+``` C++
+vector<int> v;
+```
+创建
+
+``` C++
+v.size(); 
+```
+返回当前长度
+
+```C++
+v.push_back(a);
+```
+在末尾添加数据 a
