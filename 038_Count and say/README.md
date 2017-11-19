@@ -3,10 +3,10 @@
 The count-and-say sequence is the sequence of integers with the first five terms as following:
 
 
->1.     1
->2.     11
->3.     21
->4.     1211
+>1.     1 <br>
+>2.     11 <br>
+>3.     21 <br>
+>4.     1211 <br>
 >5.     111221
 
 `1` is read off as `"one 1"` or `11`.
@@ -18,11 +18,11 @@ Note: Each term of the sequence of integers will be represented as a string.
 
 ## Example 1:
 
->Input: 1
+>Input: 1 <br>
 >Output: "1"
 
 ## Example 2:
 
->Input: 4
+>Input: 4 <br>
 >Output: "1211"
 

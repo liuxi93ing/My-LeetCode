@@ -6,11 +6,11 @@ Return the index of the first occurrence of needle in haystack, or -1 if needle 
 
 ## Example 1:
 
->Input: haystack = "hello", needle = "ll"
+>Input: haystack = "hello", needle = "ll" <br>
 >Output: 2
 
 ## Example 2:
 
->Input: haystack = "aaaaa", needle = "bba"
+>Input: haystack = "aaaaa", needle = "bba" <br>
 >Output: -1
 

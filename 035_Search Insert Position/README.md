@@ -6,20 +6,20 @@ You may assume no duplicates in the array.
 
 ## Example 1:
 
->Input: [1,3,5,6], 5
+>Input: [1,3,5,6], 5 <br>
 >Output: 2
 
 ## Example 2:
 
->Input: [1,3,5,6], 2
+>Input: [1,3,5,6], 2 <br>
 >Output: 1
 
 ## Example 3:
 
->Input: [1,3,5,6], 7
+>Input: [1,3,5,6], 7 <br>
 >Output: 4
 
 ##Example 5:
 
->Input: [1,3,5,6], 0
+>Input: [1,3,5,6], 0 <br>
 >Output: 0

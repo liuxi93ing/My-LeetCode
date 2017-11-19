@@ -9,5 +9,5 @@ A word is defined as a character sequence consists of non-space characters only.
 
 ## Example:
 
->Input: "Hello World"
+>Input: "Hello World" <br>
 >Output: 5
