@@ -1,9 +1,14 @@
 #include <iostream>
+#include <string>
+#include "Solution.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Solution s;
+    string str;
+    getline(cin,str);
+    cout<<s.romanToInt(str)<<endl;
     return 0;
 }
