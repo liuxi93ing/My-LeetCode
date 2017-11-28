@@ -1,9 +1,11 @@
 #include <iostream>
+#include <string>
+#inculde "Solution.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    string *s =
     return 0;
 }
