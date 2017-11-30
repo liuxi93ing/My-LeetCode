@@ -62,7 +62,7 @@ int main()
     print_list(head2);
 
     cout<<"merged linked list is:\n";
-    Solution s;
+    Solution_2 s;
     head3 = s.mergeTwoLists(head1,head2);
     print_list(head3);
 
