@@ -14,7 +14,7 @@ public:
             if(nums[i]==nums[i+1])
             {
                 nums.erase(nums.begin()+i);
-                i--;
+                i--;                  // i-- 因为调用erase函数删除当前元素后，i值没变 但nums[i]已经表示下一个元素了，如果直接进入下一次循环就会跳过一个元素没有检查
             }
             else
                 continue;
@@ -38,6 +38,6 @@ public:
                 nums[++index] = nums[i];
         }
 
-        return index+1;
+        return index+1;             // index 表示的是下标，从0开始的，返回数组长度记得+1
     }
 };

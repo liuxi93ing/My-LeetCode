@@ -12,3 +12,8 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
 >
 >Your function should return length = 2, with the first two elements of nums being 2.
 
+#解析：
+
+开始想错的思路：从头向后遍历，把要删除的元素与最后面的元素交换，最后截取前面有效的长度。当要删除的元素占多数时则行不通
+
+正确的思路：从头向后遍历，把要留下来的元素重写到开头。 同Q26。

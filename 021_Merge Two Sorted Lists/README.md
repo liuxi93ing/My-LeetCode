@@ -4,8 +4,6 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 
 # 解析：
 
-提供两种解答：
+方法一:开辟新节点的方法生成了新链表，运行开销较大
 
-1、开辟新节点的方法生成了新链表，运行开销较大
-
-2、按顺序重新连接两个链表中结点，运行开销较小 
+方法二：按顺序重新连接两个链表中结点，运行开销较小 
