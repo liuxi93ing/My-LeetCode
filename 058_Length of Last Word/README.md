@@ -11,3 +11,7 @@ A word is defined as a character sequence consists of non-space characters only.
 
 >Input: "Hello World" <br>
 >Output: 5
+
+# 解析：
+
+先除去结尾处可能出现的空格

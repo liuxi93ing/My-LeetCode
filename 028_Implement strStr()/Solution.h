@@ -32,7 +32,7 @@ public:
     }
 };
 
-// similar idea with solution, more efficient and clean
+//more efficient solution
 class Solution_2 {
 public:
     int strStr(string haystack, string needle) {

@@ -26,3 +26,8 @@ Note: Each term of the sequence of integers will be represented as a string.
 >Input: 4 <br>
 >Output: "1211"
 
+# 解析：
+
+用一个int数组记录生成数据，初始化为{1}，一个栈作为辅助存储空间。把数组的数据从后往前入栈，入栈一个数和这个数连续的个数。数组清空后，栈里的数据依次出栈，从头写入数组。一个循环完成。
+
+最后把数组转化为字符串返回。

@@ -23,3 +23,11 @@ You may assume no duplicates in the array.
 
 >Input: [1,3,5,6], 0 <br>
 >Output: 0
+
+# 解析:
+
+方法一：顺序查找
+
+方法二：二分查找
+
+有序不重复数组，使用二分查找标志。 二分查找注意边界值问题。
