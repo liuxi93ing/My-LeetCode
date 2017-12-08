@@ -15,8 +15,8 @@ public:
         int i = 0;
         int m = a.length(), n = b.length();
         int l = m>n? m:n;
-        string c, flag;
-        flag += '0';
+        string c, carry;
+        carry += '0';
         for(i=0; i<m/2; i++)
             swap(a[i],a[m-1-i]);
         for(i=0; i<n/2; i++)
@@ -31,29 +31,29 @@ public:
         for(i=0; i<l;i++)
         {
 
-            if(a[i]+b[i]+flag[i]=='1'+'1'+'1')
+            if(a[i]+b[i]+carry[i]=='1'+'1'+'1')
             {
                 c += '1';
-                flag += '1';
+                carry += '1';
             }
-            else if(a[i]+b[i]+flag[i]=='1'+'1'+'0')
+            else if(a[i]+b[i]+carry[i]=='1'+'1'+'0')
             {
                 c += '0';
-                flag += '1';
+                carry += '1';
             }
-            else if(a[i]+b[i]+flag[i]=='1'+'0'+'0')
+            else if(a[i]+b[i]+carry[i]=='1'+'0'+'0')
             {
                 c += '1';
-                flag += '0';
+                carry += '0';
             }
-            else if(a[i]+b[i]+flag[i]=='0'+'0'+'0')
+            else if(a[i]+b[i]+carry[i]=='0'+'0'+'0')
             {
                 c += '0';
-                flag += '0';
+                carry += '0';
             }
         }
-        if(flag[i]=='1')
-            c += flag[i];
+        if(carry[i]=='1')
+            c += carry[i];
         for(i=0; i<c.length()/2; i++)
             swap(c[i],c[c.length()-i-1]);
         return c;
@@ -64,19 +64,33 @@ public:
 class Solution_2 {
 public:
     string addBinary(string a, string b) {
-        string rs = "";
-        int n1 = a.size(), n2 = b.size(), carry = 0;
-        for (int i = n1 - 1, j = n2 - 1; i >= 0 || j >= 0; i--, j--) {
-            int op1, op2;
-            if (i >= 0) op1 = a[i] - '0';
-            else op1 = 0;
-            if (j >= 0) op2 = b[j] - '0';
-            else op2 = 0;
-            int sum = op1 ^ op2 ^ carry;
-            rs = (char)(sum + '0') + rs;
-            carry = op1 & op2 | op1 & carry | op2 & carry;
+        if(a.empty()&&b.empty())
+            return "0";
+
+        int m = a.length(), n = b.length();
+        int i, j;
+        int op1 = 0, op2 = 0, sum = 0, carry = 0;
+        string c = "";
+        for(i=m-1,j=n-1;i>=0||j>=0;i--,j--)
+        {
+            if(i<0) op1 = 0;             // 判断a串是否已加完
+            else op1 = a[i] - '0';       // 字符转int， -'0'等价于-48
+            if(j<0) op2 = 0;
+            else op2 = b[j] - '0';
+
+            cout<<"current op1 is "<<op1<<endl;
+            cout<<"current op2 is "<<op2<<endl;
+            sum = op1^op2^carry;        // 计算当前sum， 计算二进制相加是异或操作
+            carry = op1&op2 || op1&carry || op2&carry;   // 计算下一个carry值， 我们需要当前op1，op2,carry中至少两个为1时，新carry为1，使用这个算式。
+
+            sum = sum + '0';
+            c =  (char)sum + c;
+            cout<<"current c is "<<c<<endl;
+            cout<<"next carry is "<<carry<<endl;
         }
-        if (carry) rs = '1' + rs;
-        return rs;
+
+        if(carry == 1)
+            c = '1' + c;
+        return c;
     }
 };
