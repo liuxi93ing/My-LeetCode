@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    Solution_1 s;
-    string str1 = {"10"};
-    string str2 = {"0"};
+    Solution_2 s;
+    string str1 = {"11"};
+    string str2 = {"1"};
     cout<<s.addBinary(str1,str2)<<endl;
     return 0;
 }
