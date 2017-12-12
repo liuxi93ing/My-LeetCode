@@ -25,3 +25,7 @@ Given n will be a positive integer.
 >1. 1 step + 1 step + 1 step <br>
 >2. 1 step + 2 steps <br>
 >3. 2 steps + 1 step
+
+# 解析：
+
+多算出后几个数列发现是fibonacci数列。

@@ -14,10 +14,10 @@ public:
         ListNode* tail = head;
         while(current!=NULL)
         {
-            cout<<"current val is "<<current->val<<endl;
+ //           cout<<"current val is "<<current->val<<endl;
             if(current->val==tail->val+1)
             {
-                cout<<"tail val is "<<tail->val<<endl;
+ //               cout<<"tail val is "<<tail->val<<endl;
                 tail->next = current;
                 tail = tail->next;
             }

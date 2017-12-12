@@ -1,8 +1,10 @@
+#include "TreeNode.h"
 
 using namespace std;
 
-class Solution{
+class Solution {
 public:
+    bool isSameTree(TreeNode* p, TreeNode* q) {
 
-
+    }
 };

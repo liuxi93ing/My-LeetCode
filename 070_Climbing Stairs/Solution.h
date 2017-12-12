@@ -6,6 +6,7 @@ class Solution {
 public:
     int climbStairs(int n) {
 /*
+// 递归空间复杂度最小，时间复杂度最大。（time exceed）
         if(n==1)
             return 1;
         else if(n==2)
@@ -15,6 +16,7 @@ public:
 */
 
 /*
+// 时间复杂度和空间复杂度的tradeoff
         int a1 = 0;
         int a2 = 1;
         int temp = 1;
@@ -27,6 +29,7 @@ public:
         return a2;
  */
 
+//  使用数组时间复杂度最小，空间复杂度最大
         vector<int> a(n+1, 0);
         if (n==0) return 0;
         if (n==1) return 1;
