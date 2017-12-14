@@ -13,8 +13,12 @@ public:
         else if(p==NULL&&q!=NULL)
             return false;
         else
-            if(p->val==q->val)
-                return isSameTree(p->left, q->left)&&isSameTree(p->left, q->left);
+        {
+            if(p->val!=q->val)
+                return false;
+            else
+                return isSameTree(p->left, q->left)&&isSameTree(p->right, q->right);
+        }
 
     }
 };

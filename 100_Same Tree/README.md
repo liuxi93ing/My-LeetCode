@@ -34,7 +34,13 @@ Two binary trees are considered the same if they are structurally identical and 
 >
 >Output: false
 
+# 解析：
 
+前序遍历比较每个结点。先判断是否为空，再比较当前结点值，若相等递归比较左右子树。
+
+# 笔记：
+
+创建二叉树可以使用前序序列和中序序列递归创建，前提是序列中没有重复数据。有重复数据可以手动创建。
 
 
 
