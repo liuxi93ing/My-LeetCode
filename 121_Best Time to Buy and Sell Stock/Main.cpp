@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Solution.h"
 
 using namespace std;
@@ -6,6 +7,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    cout<<endl;
-    return ;
+    vector<int> prices = {};
+    cout<<s.maxProfit(prices)<<endl;
+    return 0;
 }
