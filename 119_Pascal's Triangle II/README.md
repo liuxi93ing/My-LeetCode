@@ -9,3 +9,7 @@ Return [1,3,3,1].
 ## Note:
 
 Could you optimize your algorithm to use only O(k) extra space?
+
+# 解析；
+
+同上一题无异。注意函数传入的是index，第一行的index是0。

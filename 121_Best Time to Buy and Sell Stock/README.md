@@ -17,3 +17,9 @@ If you were only permitted to complete at most one transaction (ie, buy one and 
 >Output: 0				<br>
 >
 >In this case, no transaction is done, i.e. max profit = 0.
+
+# 解析:
+
+如果输入是一个单调递减或持续不变的序列，利润为0。只要前面出现的任意一个数大于后面的，就会有利润。
+
+记录买入价和利润。买入价永远是越小越好。利润为当前价格减去买入价，利润下限为0。遍历数列，当前价格如果小于买入价，记录为买入价，若大于买入价判断是否有更大利润。
