@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "Solution.h"
 
 using namespace std;
@@ -6,6 +7,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    cout<<endl;
-    return ;
+    string str = "";
+    cout<<s.isPalindrome(str)<<endl;
+    return 0;
 }
