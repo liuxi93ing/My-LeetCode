@@ -7,5 +7,5 @@ int main()
 {
     Solution s;
     cout<<endl;
-    return ;
+    return 0;
 }
