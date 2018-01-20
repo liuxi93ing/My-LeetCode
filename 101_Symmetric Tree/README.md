@@ -33,6 +33,6 @@ Bonus points if you could solve it both recursively and iteratively
 >          \   \    
 >           3   2
 
-思路改进: 单独剔除中情况即可。开始处增加判断: 当根节点的左右叶子都有值且不相等时，返回false。 
+思路改进: 单独剔除这种情况即可。开始处增加判断: 当根节点的左右叶子都有值且不相等时，返回false。 
 
 方法二: 把root节点下的左右子树当成两棵树*tree1和*tree2，递归比较tree1->left和tree2->right,tree1->right和tree2->left。

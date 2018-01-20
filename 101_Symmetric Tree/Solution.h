@@ -32,3 +32,21 @@ public:
         return true;
     }
 };
+
+class Solution_2 {
+    bool isSymmetric(TreeNode* root) {
+        if(!root)  return true;
+        return isSymmetric(root->left,root->right);
+    }
+
+    bool isSymmetric(TreeNode* tree1, TreeNode* tree2) {
+        if(tree1==NULL&&tree2==NULL) return true;
+        if(tree1==NULL||tree2==NULL) return false;
+
+        //when both tree1, tree2 are not NULL
+        if(tree1->val!=tree2->val) return false;
+        return isSymmetric(tree1->left, tree2->right)&&isSymmetric(tree1->right,tree2->left);
+
+    }
+
+};

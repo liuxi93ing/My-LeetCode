@@ -14,3 +14,6 @@ Have you consider that the string might be empty? This is a good question to ask
 
 For the purpose of this problem, we define empty string as valid palindrome.
 
+# 解析:
+
+题目较简单，使用cctype库中 isalnum() 可判读一个字符是否是字母或数字。首尾光标向中间逼近，跳过不是的。还用到tolower()函数。
