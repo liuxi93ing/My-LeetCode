@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Solution.h"
 
 using namespace std;
@@ -6,6 +7,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    cout<<endl;
-    return ;
+    vector<int> arr = {1,2,3,4,1,3,2};
+    cout<<s.singleNumber(arr)<<endl;
+    return 0;
 }
