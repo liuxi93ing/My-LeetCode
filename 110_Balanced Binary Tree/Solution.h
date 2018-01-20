@@ -25,7 +25,7 @@ public:
 
 
 
-// similar to solution_1, traverse twice, able to check "line tree"(the reason solution 1 did n't pass)
+// similar to solution_1, traverse twice, able to check "line tree"(the reason solution 1 did not pass)
 class Solution_2 {
 public:
 
