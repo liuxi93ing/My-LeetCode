@@ -4,32 +4,6 @@
 
 using namespace std;
 
-
-ListNode* create_list(int *s, int length)
-{
-    ListNode *head = new ListNode(s[0]);
-    ListNode *current = head;
-    ListNode *prev = current;
-    for(int i=1;i<length;i++)
-    {
-        current = new ListNode(s[i]);
-        prev->next = current;
-        prev = current;
-    }
-    return head;
-}
-
-void print_list(ListNode* head)
-{
-    ListNode *p = head;
-    while(p!=NULL)
-    {
-        cout<< p->val<<' ';
-        p = p->next;
-    }
-    cout<<'\n';
-}
-
 void Bubble_sort(int *a, int length)
 {
     int i,j;
@@ -47,8 +21,8 @@ int main()
     ListNode *head1;
     ListNode *head2;
     ListNode *head3;
-    int s1[] = {};
-    int s2[] = {};
+    int s1[] = {1,2,3,4,5};
+    int s2[] = {1,5,9,12};
 
     Bubble_sort(s1, sizeof(s1)/sizeof(s1[0]));
     Bubble_sort(s2, sizeof(s2)/sizeof(s2[0]));

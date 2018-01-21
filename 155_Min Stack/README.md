@@ -20,3 +20,7 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 >minStack.pop();					<br>
 >minStack.top();      --> Returns 0.	<br>
 >minStack.getMin();   --> Returns -2.	
+
+# 解析：
+
+在vector<int> 的基础上实现即可。

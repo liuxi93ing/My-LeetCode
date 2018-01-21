@@ -17,5 +17,7 @@ Given the below binary tree and sum = 22,
 return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 
 
+# 解析：
 
+遍历到每个节点时，先用sum减去当前节点值。如果当前节点是叶子节点，判断sum是否为0。分情况递归左为空，右为空，和左右都不为空的情况。
 
