@@ -12,7 +12,20 @@ Given a positive integer, return its corresponding column title as appear in an 
 >    27 -> AA  <br>
 >    28 -> AB   
 
-# 解析;
+
+# 解析:
+
+找出些更多规律：
+
+>    52 -> AZ  <br>
+>    53 -> BA <br>
+>    ...		<br>
+>    676 -> YZ (26*26) <br>
+>    677 -> ZA	<br>
+>    ...		<br>
+>    702 -> ZZ (27*26) <br>
+>    703 -> AAA <br>
+
 
 典型的十进制数转化其他进制数的问题。此题10进制转化26进制。但陷阱在于：10进制最小的数应从0开始，此题中是1对应A。所以直接转化肯定错的。
 

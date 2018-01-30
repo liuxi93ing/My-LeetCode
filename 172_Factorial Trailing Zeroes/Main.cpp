@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-    Solution s;
-    cout<<endl;
-    return ;
+    Solution_1 s;
+    int val = 50;
+    cout<<s.trailingZeroes(val)<<endl;
+    return 0;
 }
