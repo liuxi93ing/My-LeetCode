@@ -15,3 +15,11 @@ If this function is called many times, how would you optimize it?
 方法二：直接使用位运算，在数位上操作。初始化res为全0，每次判断n的末尾，如果为1，res末尾变为1。然后n右移一位，res左移一位。一共循环32次。要注意两点：1）每次循环判断n的一位，n只需右移31次，最后一次循环结束后n回到初始状态，但res为了写满32位数，必须只左移31次。2）判断尾数用 n & 1， 添加尾数用 res | 1。
 
 方法三：其实是方法一的升级版，使用显示的数据结构bitset。bitset<32> x(n) 可以直接得到32位的二进制数组x。倒转后，二进制转化回去使用to_ulong()。
+
+# 笔记：
+
+stack<> 类成员函数和vector<> 不同。没有push_back(), 而是：
+
+stack<>.push(); </br>
+stack<>.top();	</br>
+stack<>.pop();	</br>
