@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    cout<<endl;
-    return ;
+    uint32_t val = 11;
+    cout<<s.hammingWeight(val)<<endl;
+    return 0;
 }
