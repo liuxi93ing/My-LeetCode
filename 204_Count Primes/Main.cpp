@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-    Solution s;
-    cout<<endl;
+    Solution_2 s;
+    int val = 100;
+    cout<<s.countPrimes(val)<<endl;
     return 0;
 }
