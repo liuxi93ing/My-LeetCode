@@ -8,4 +8,4 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 
 # 解析:
 
-此题考查异或运算。需了解 a^a=0, a^0=a。
+此题考查异或运算。需了解 a^a=0, a^0=a。因此把数组中每个元素都进行异或操作，两个相同的元素会相互抵消，剩下的就是那个单独的。

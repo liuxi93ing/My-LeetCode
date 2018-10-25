@@ -19,5 +19,7 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 # 解析：
 
-binary-search-tree的特点是结点数据大关系为：小左<中<右。BST的中序遍历可定是排好序的数组。给定排好序的数组，我们使用二分法建立bst。取数组中间位置的数作为root结点数据，左一半数组递归建立做子树，右一半数组递归建立右子树。 
+常用的算法，binary-search-tree的特点是结点数据大小关系为：左<中<右。BST的中序遍历肯定是排好序的数组。给定排好序的数组，我们使用二分法建立bst。取数组中间位置的数作为root结点数据，左一半数组递归建立做子树，右一半数组递归建立右子树。
+
+注：并非一定要绝对的中间位置的数据作为根节点，任意一个数据都可作为根节点。 
 
