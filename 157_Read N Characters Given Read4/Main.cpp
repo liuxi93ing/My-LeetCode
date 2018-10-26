@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    cout<<endl;
+    char *buf = "abcd";
+    cout<<s.read(buf,0)<<endl;
     return 0;
 }
