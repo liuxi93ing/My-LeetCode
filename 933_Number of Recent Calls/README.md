@@ -27,3 +27,5 @@ It is guaranteed that every call to ping uses a strictly larger value of t than 
 * Each call to ping will have 1 <= t <= 10^9.
 
 #解析：
+
+这道题的ping函数可以理解为：在t时刻调用ping函数，返回[t-3000, t]这个时间段调用过的ping的次数。因此要记录下每次ping的时刻，由于t数值越来越大，所以不用保存所有的t，只保存最新的t到t-3000的的记录即可。 因此一个queue轻松解决问题。

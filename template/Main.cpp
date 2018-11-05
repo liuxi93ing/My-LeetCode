@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include <queue>
 #include <unordered_map>
 #include <algorithm>
@@ -9,11 +10,7 @@ using namespace std;
 
 int main()
 {
-    RecentCounter * obj = new RecentCounter();
-    cout<<obj->ping(1)<<' ';
-    cout<<obj->ping(100)<<' ';
-    cout<<obj->ping(3001)<<' ';
-    cout<<obj->ping(3002)<<' ';
+    Solution s;
 
     return 0;
 }
